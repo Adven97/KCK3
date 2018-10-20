@@ -1,0 +1,23 @@
+.background {
+    -fx-background-color:#181818;
+    }
+
+.but {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 6;
+    -fx-background-color: #909090;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 7pt;
+    -fx-text-fill: #d8d8d8;
+        -fx-border-radius: 2,2;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+.but:hover {
+    -fx-background-color: #a0a0a0;
+}
+
+.rb{
+-fx-text-fill: #cccc00;
+}
