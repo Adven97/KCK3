@@ -6,15 +6,28 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Circle?>
 <AnchorPane styleClass="background" stylesheets="@style.css" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="1014.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
     <ToggleButton styleClass="but" layoutX="64.0" layoutY="47.0" mnemonicParsing="false" text=" ON / OFF " fx:id="toggleButton" onAction="#startPlaying" />
-    <Slider layoutX="64.0" layoutY="186.0" prefWidth="431.0" fx:id="volume" />
-    <Slider layoutX="64.0" layoutY="284.0" prefWidth="431.0" />
+
+    <Label styleClass="txtFont" text="VOLUME" layoutX="17.0" layoutY="186.0"/>
+    <Slider layoutX="74.0" layoutY="186.0" prefWidth="435.0" fx:id="volume" />
+    <Label styleClass="txtFont" text="TONE" layoutX="20.0" layoutY="284.0"/>
+    <Slider layoutX="74.0" layoutY="284.0" prefWidth="435.0" />
+
     <RadioButton styleClass="rb" fx:id="rU" layoutX="60.0" layoutY="459.0" mnemonicParsing="false" text="U" onAction="#initRadioButtons" />
     <RadioButton styleClass="rb" fx:id="rD" layoutX="180.0" layoutY="459.0" mnemonicParsing="false" text="D" onAction="#initRadioButtons" />
     <RadioButton styleClass="rb" fx:id="rS" layoutX="326.0" layoutY="459.0" mnemonicParsing="false" text="S" onAction="#initRadioButtons" />
     <RadioButton styleClass="rb" fx:id="rK" layoutX="442.0" layoutY="459.0" mnemonicParsing="false" text="K" onAction="#initRadioButtons" />
-    <ProgressIndicator styleClass="pokretlo" layoutX="740.0" layoutY="186.0" prefHeight="152.0" prefWidth="138.0" progress="0.0" />
+
+    <Label styleClass="txtFont" text="FREQUENCY" layoutX="300.0" layoutY="50.0"/>
+    <Slider fx:id="slider"
+            prefWidth="510.0"
+            layoutX="380.0" layoutY="50.0"
+    />
+    <Pane fx:id="pane2" layoutX="370.0" layoutY="46.0" prefWidth="530.0" prefHeight="60.0" />
+    <Pane styleClass="pane" fx:id="pane" layoutX="650.0" layoutY="156.0" prefWidth="250.0" prefHeight="250.0" />
   </children>
 </AnchorPane>

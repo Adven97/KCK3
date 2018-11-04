@@ -29,10 +29,9 @@ public class Main extends Application {
 
         Scene scene = new Scene(root, 930, 550);
 
-        primaryStage.setTitle("FXML Welcome");
+        primaryStage.setTitle("Stare radio");
         primaryStage.setScene(scene);
         primaryStage.show();
-
 
 
     }
